@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zabbe - DEveloper Portfolio</title>
+    <title>Zabbe - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7de3369a2d.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="main">
+
     <header>
       <nav id="nav-bar">
         <div class="left">
-        <span><i>Z</i></span>abbe's Portfolio</div>
+        <span><i>Za</i></span>bbe's Portfolio
+        </div>
         <div class="right">
           <ul id="side-menu">
             <li><a href="" onclick="closemenu()">Home</a></li>
             <li><a href="#about" onclick="closemenu()">About</a></li>
             <li><a href="#services" onclick="closemenu()">Services</a></li>
             <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
-            <li><a href="#contact" onclick="closemenu()">Contact Me</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fas fa-times close" onclick="closemenu()"></i>
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </div>
       </nav>
+      
+    
     </header>
+  
     <main>
       <section class="firstsection">
         <div class="leftsection">
@@ -45,9 +52,7 @@
         <div class="rightsection">
         
         </div>
-        <!-- <div class="rightsection">
-          <img src="./background.jpg" alt="" />
-        </div> -->
+       
       </section>
 
       <!-- about secction  -->
@@ -60,8 +65,8 @@
             </div>
             <div class="about-col-2">
              <h1 class="sub-title">About Me</h1>
-             <p>"Welcome! Myself Jahanzaib , and I am from PirMahal, Pakistan. I got interested in web developement. As I am also a hostelite student and there is a quite difficult to manage a time to do things on proper time but i try my best to manage uni life  as well as my career in the development field. 
-              In Sha Allah , one day i want to see myself on top"</p>
+             <p>"Welcome! Myself Jahanzaib , and I am from PirMahal, Pakistan. I have an great experience of internship as a frontend developer in US based company.
+             "</p>
 
              <div class="tab-title">
               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -71,20 +76,21 @@
 
              <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>Web Development</span><br>Designing Web Interfaces</li>
-                <li><span>JavaScript</span><br>Great command on JavaScript and node.js</li>
-                <li><span>Critical Thinking</span><br>Decision making is very strong</li>
+                <li><span>Web Development, HTML, CSS, JS, Bootstrap</span><br>Designing Web Interfaces</li>
+                <li><span>React JS , GSAP</span><br>Great command on React and GSAP</li>
+                <li><span>Node js and MongoDb</span><br>Great command on Database and Node.js</li>
               </ul>
              </div>
              <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2023</span><br>I have an 1 year experience in this field. I worked in Us based company in 2023 and also i have an fiver experience.</li>
+                <li><span>2023</span><br><p class="text">I've an  great experience of internship as a frontend developer . I worked in Us based company in 2023 and also I've a fiver experience.</p></li>
               </ul>
              </div>
              <div class="tab-contents" id="education">
               <ul>
-                <li><span>2017-2019</span><br>Matric from Faran Group of Colleges Pirmahal</li>
-                <li><span>2019-2021</span><br>FSC from Faran Group of Colleges Pirmahal</li>
+    <li><span>2017-2019</span><br>Matric from Faran Group of Colleges Pirmahal. 
+      <br>(94.63%)</li>
+                <li><span>2019-2021</span><br>FSC from Faran Group of Colleges Pirmahal. <br> (93.90%)</li>
                 <li><span>2021-2025</span><br>Graduation From University Of Punjab, Lahore</li>
               </ul>
              </div>
@@ -185,7 +191,10 @@
 <div class="copy-right">
   <p>Copyright &#169; Zabbe'sPortfolio.com | All rights reserved</p>
 </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
     <script>
       var typed = new Typed("#element", {
         strings: ["Web Developer", "&amp; Student."],
@@ -204,14 +213,16 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
+
     <script>
       let sidemenu=document.getElementById("side-menu");
       function openmenu(){
         sidemenu.style.right="0";
       }
       function closemenu(){
-        sidemenu.style.right="-200px";
+        sidemenu.style.right="-400px";
       }
+     
     </script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwhznDswstIXlFuHC9payxjfKi0EhR_SpcvEao_zUti6AJd2PRjnitp277kW97lFOY/exec'

@@ -153,7 +153,7 @@
       transition:width 0.5s;
     }
     .tab-links.active-link::after{
-      width: 50%;
+      width: 80%;
     }
     .tab-contents ul li{
       list-style: none;
@@ -171,6 +171,9 @@
     }
     #experience{
       width: 200px;
+    }
+    .text{
+  text-align:justify;
     }
 
 
@@ -365,16 +368,31 @@ nav .fas{
   display: none;
 }
 @media only screen and (max-width:600px) {
+  nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+    transition: width 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 20%;
+  }
   .btn-2 {
     display: block;
     margin: 20px auto;
   }
-
+#side-menu{
+  padding-top: 150px;
+}
   form .btn-2 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
   #header{
     background: url();
   }
@@ -390,21 +408,25 @@ nav .fas{
     font-size: 20px;
   }
   nav .fa-bars{
-    position: relative;
+  position: relative;
    right:0
   }
   nav .fas{
     display: block;
     font-size: 25px;
-    
+  }
+  .close{
+font-size: 34px !important;
+margin-left: 160px;
+margin-top: 50px;
   }
   nav ul{
-    background:#ff004f;
-    /* background:#0d273d; */
+    /* background:#ff004f; */
+    background:#0d273d;
     position: fixed;
      top: 0;
-     right: -200px;
-    width: 200px;
+     right: -400px;
+    width: 400px;
     height: 100vh;
     padding-top: 50px;
     z-index: 5;
@@ -414,6 +436,11 @@ nav .fas{
 display: block;
  margin: 25px;
  }
+ nav ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 nav ul .fas{
   position: absolute;
@@ -456,5 +483,4 @@ nav ul .fas{
   margin-top: -40px;
   display: block;
 }
-
 }
