@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zabbe - DEveloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7de3369a2d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <div class="left">
+        <span><i>Z</i></span>abbe's Portfolio</div>
+        <div class="right">
+          <ul id="side-menu">
+            <li><a href="" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact Me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="firstsection-text">Jahanzaib</span>
+          <div>
+            and I'm a passionate
+            <div></div>
+          </div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+        
+        </div>
+        <!-- <div class="rightsection">
+          <img src="./background.jpg" alt="" />
+        </div> -->
+      </section>
+
+      <!-- about secction  -->
+      <section>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./about.png" alt="">
+            </div>
+            <div class="about-col-2">
+             <h1 class="sub-title">About Me</h1>
+             <p>"Welcome! Myself Jahanzaib , and I am from PirMahal, Pakistan. I got interested in web developement. As I am also a hostelite student and there is a quite difficult to manage a time to do things on proper time but i try my best to manage uni life  as well as my career in the development field. 
+              In Sha Allah , one day i want to see myself on top"</p>
+
+             <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+             </div>
+
+             <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                <li><span>JavaScript</span><br>Great command on JavaScript and node.js</li>
+                <li><span>Critical Thinking</span><br>Decision making is very strong</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023</span><br>I have an 1 year experience in this field. I worked in Us based company in 2023 and also i have an fiver experience.</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2017-2019</span><br>Matric from Faran Group of Colleges Pirmahal</li>
+                <li><span>2019-2021</span><br>FSC from Faran Group of Colleges Pirmahal</li>
+                <li><span>2021-2025</span><br>Graduation From University Of Punjab, Lahore</li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- Services -->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-sharp fa-solid fa-code"></i>
+              <h2>Web Developer</h2>
+              <p>I'm a front end developer in JavaScript and my aim to become a full Stack in Upcoming months InShaAllah.</p>
+              
+            </div>
+            <div>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>SportsMan</h2>
+              <p>Besides web development I'm also a sportsman. I get many awards in bedmintion and cricket  .</p>
+             
+            </div>
+            <div>
+              <i class="fa-solid fa-user-pen"></i>
+              <h2>Essay Writing</h2>
+              <p>Alhamdulillah,I'm rewarded by a certificate in my college life due to a great distinction in essay writing.</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- portfolio............. -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+    <div class="work">
+      <img src="./work1.png">
+      <div class="layer">
+        <h3>Clock</h3>
+        <p>I make a website which shows you the current time with date and day of Pakistan Country.</p>
+          <a href="../Clock-11/clock.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="./work2.jpg" alt="">
+      <div class="layer">
+        <h3>Music-Website</h3>
+        <p>This site gives u a great content of Music. Listen and enjoy it.</p>
+          <a href="../Music-Website/index.html" target="_blank"/><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="./work3.jpg" alt="">
+      <div class="layer">
+        <h3>Online Shopping website</h3>
+        <p>This website connects you to the ShoppingMall. You can order clothes from here.
+         </p>
+          <a href="../Adnan Mall/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!-- ----------------contact--------------- -->
+<div id="contact">
+  <div class="container">
+  <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fas fa-paper-plane"></i>itxmejz@gmail.com</p>
+      <p><i class="fas fa-phone-square-alt"></i>0325-6279496</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100091345870252&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/itx_zabbe?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Z_5_j?t=GsCuNfru8goEvqNofv-fRA&s=09" target="_blank"><i class="fab  fa-twitter-square"></i></a>
+      </div>
+      <a href="./Jahan's Resume (1).pdf" target="_blank" download="" class="btn btn-2">Download CV</a>
+    </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn-2">Submit</button>
+      </form>
+      <span id="msg"></span>
+    </div>
+  </div>
+</div>
+</div>
+<div class="copy-right">
+  <p>Copyright &#169; Zabbe'sPortfolio.com | All rights reserved</p>
+</div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "&amp; Student."],
+        typeSpeed: 50,
+      });
+      let tablinks=document.getElementsByClassName("tab-links");
+      let tabcontents=document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      let sidemenu=document.getElementById("side-menu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwhznDswstIXlFuHC9payxjfKi0EhR_SpcvEao_zUti6AJd2PRjnitp277kW97lFOY/exec'
+      const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
