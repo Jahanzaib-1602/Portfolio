@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7de3369a2d.js" crossorigin="anonymous"></script>
   </head>
@@ -32,7 +32,7 @@
             <li><a href="#contact" onclick="closemenu()">Contact</a></li>
             <i class="fas fa-times close" onclick="closemenu()"></i>
           </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
+          <i class="fas fa-bars open" onclick="openmenu()"></i>
         </div>
       </nav>
       
@@ -50,7 +50,7 @@
           <span id="element"></span>
         </div>
         <div class="rightsection">
-        
+       
         </div>
        
       </section>
@@ -61,11 +61,11 @@
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="./about.png" alt="">
+              <img class="inner-img" src="./about.png" alt="">
             </div>
             <div class="about-col-2">
              <h1 class="sub-title">About Me</h1>
-             <p>"Welcome! Myself Jahanzaib , and I am from PirMahal, Pakistan. I have an great experience of internship as a frontend developer in US based company.
+             <p class="text">"Welcome! Myself Jahanzaib , and I am from PirMahal, Pakistan. I have an great experience of internship as a frontend developer in US based company.
              "</p>
 
              <div class="tab-title">
@@ -83,14 +83,13 @@
              </div>
              <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2023</span><br><p class="text">I've an  great experience of internship as a frontend developer . I worked in Us based company in 2023 and also I've a fiver experience.</p></li>
+                <li><span>2023</span><br>I've an  great experience of internship as a frontend developer . I worked in Us based company in 2023 and also I've a fiver experience.</li>
               </ul>
              </div>
              <div class="tab-contents" id="education">
               <ul>
-    <li><span>2017-2019</span><br>Matric from Faran Group of Colleges Pirmahal. 
-      <br>(94.63%)</li>
-                <li><span>2019-2021</span><br>FSC from Faran Group of Colleges Pirmahal. <br> (93.90%)</li>
+                  <li><span>2017-2019</span><br>Matric from Faran Group of Colleges Pirmahal.&nbsp; &nbsp;(94.63%)</li>
+                <li><span>2019-2021</span><br>FSC from Faran Group of Colleges Pirmahal. &nbsp;(93.90%)</li>
                 <li><span>2021-2025</span><br>Graduation From University Of Punjab, Lahore</li>
               </ul>
              </div>
@@ -166,13 +165,14 @@
   <div class="container">
   <div class="row">
     <div class="contact-left">
-      <h1 class="sub-title">Contact Me</h1>
+      <h1 class="sub-title sub-title-small">Contact Me</h1>
       <p><i class="fas fa-paper-plane"></i>itxmejz@gmail.com</p>
       <p><i class="fas fa-phone-square-alt"></i>0325-6279496</p>
       <div class="social-icons">
         <a href="https://www.facebook.com/profile.php?id=100091345870252&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://instagram.com/itx_zabbe?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/Z_5_j?t=GsCuNfru8goEvqNofv-fRA&s=09" target="_blank"><i class="fab  fa-twitter-square"></i></a>
+        <a href="https://www.linkedin.com/in/jahan-zaib-a18160270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
       <a href="./Jahan's Resume (1).pdf" target="_blank" download="" class="btn btn-2">Download CV</a>
     </div>
@@ -192,8 +192,12 @@
   <p>Copyright &#169; Zabbe'sPortfolio.com | All rights reserved</p>
 </div>
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
     <script src="script.js"></script>
     <script>
       var typed = new Typed("#element", {
@@ -220,7 +224,7 @@
         sidemenu.style.right="0";
       }
       function closemenu(){
-        sidemenu.style.right="-400px";
+        sidemenu.style.right="-600px";
       }
      
     </script>
