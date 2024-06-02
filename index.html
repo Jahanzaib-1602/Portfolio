@@ -10,13 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7de3369a2d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="main">
-
-    <header>
+    <header>  
+     <div id="preloader"></div>
+    <!-- animation -->
+    <span class="animation"></span>
+    <!-- navbar     -->
       <nav id="nav-bar">
         <div class="left">
         <span><i>Za</i></span>bbe's Portfolio
@@ -63,7 +67,7 @@
             </div>
             <div class="about-col-2">
              <h1 class="sub-title">About Me</h1>
-             <p class="text">"Welcome! Myself Jahanzaib , and I am from PirMahal, Pakistan. I have an great experience of internship as a frontend developer in US based company.
+             <p class="text">"Welcome! Myself Jahanzaib , and I am from PirMahal, Pakistan .As a frontend developer with one year of experience, I have created responsive web interfaces using HTML, CSS, and JavaScript, ensuring optimal performance across devices.
              "</p>
 
              <div class="tab-title">
@@ -81,7 +85,7 @@
              </div>
              <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2023</span><br>I've an  great experience of internship as a frontend developer . I worked in Us based company in 2023 and also I've a fiver experience.</li>
+                <li><span>2023-2024</span><br>As a frontend developer with one year of experience, I have created responsive web interfaces using HTML, CSS, and JavaScript, ensuring optimal performance across devices.</li>
               </ul>
              </div>
              <div class="tab-contents" id="education">
@@ -110,7 +114,7 @@
             <div>
               <i class="fa-brands fa-react"></i>
               <h2>React js Developer</h2>
-              <p class="explanation">I build web application using react and redux js .</p>
+              <p class="explanation">I build web application using react and redux toolkit.</p>
              
             </div>
             <div>
@@ -126,36 +130,36 @@
 
 <!-- portfolio............. -->
 <div id="portfolio">
-  <div class="container">
+  <div class="containerr">
     <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-    <div class="work">
-      <img src="./work1.png">
-      <div class="layer">
-        <h3>Clock</h3>
-        <p>I make a website which shows you the current time with date and day of Pakistan Country.</p>
-          <a href="../Clock-11/clock.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    <div class="work-list" id="work-list">
+      
+      <div class="work">
+        <img src="./ochi.png" alt="">
+        <div class="layer">
+          <h3>Ochi(Site of the Day)</h3>
+          <p>Ochi is a strategic partner for fast-growing tech businesses that need to raise funds, sell products, explain complex ideas, and hire great people.</p>
+          <a href="https://github.com/Jahanzaib-1602/Ochi_Clone" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./clock1.jpg">
+        <div class="layer">
+          <h3>Clock</h3>
+          <p>I make a website which shows you the current time with date and day of Pakistan Country.</p>
+          <a href="https://clockmaster.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./invoice_img.jpg" alt="">
+        <div class="layer">
+          <h3>Invoice Generator</h3>
+          <p>This Invoice Generator helps you create invoices in an instant. Enter the billing information and make invoices that you can print, download as PDF.</p>
+          <a href="https://github.com/Jahanzaib-1602/Invoice_Generator" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
       </div>
     </div>
-    <div class="work">
-      <img src="./work2.jpg" alt="">
-      <div class="layer">
-        <h3>Music-Website</h3>
-        <p>This site gives u a great content of Music. Listen and enjoy it.</p>
-          <a href="../Music-Website/index.html" target="_blank"/><i class="fas fa-external-link-alt"></i></a>
-      </div>
-    </div>
-    <div class="work">
-      <img src="./work3.jpg" alt="">
-      <div class="layer">
-        <h3>Online Shopping website</h3>
-        <p>This website connects you to the ShoppingMall. You can order clothes from here.
-         </p>
-          <a href="../Adnan Mall/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-      </div>
-    </div>
-  </div>
-  <a href="#" class="btn">See more</a>
+    <a href="" class="btn" id="see-more">See more</a>
   </div>
 </div>
 
@@ -173,7 +177,7 @@
         <a href="https://twitter.com/Z_5_j?t=GsCuNfru8goEvqNofv-fRA&s=09" target="_blank"><i class="fab  fa-twitter-square"></i></a>
         <a href="https://www.linkedin.com/in/jahan-zaib-a18160270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-      <a href="./Jahan's Resume (1).pdf" target="_blank" download="" class="btn btn-2">Download CV</a>
+      <a href="./Jahanzaib's Resume.pdf" target="_blank" download="" class="btn btn-2">Download CV</a>
     </div>
     <div class="contact-right">
       <form name="submit-to-google-sheet">
@@ -197,6 +201,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="script.js"></script>
     <script>
       var typed = new Typed("#element", {
@@ -228,21 +234,33 @@
      
     </script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwhznDswstIXlFuHC9payxjfKi0EhR_SpcvEao_zUti6AJd2PRjnitp277kW97lFOY/exec'
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyHoA2OLGyOISR0m2cHaM3HW0Ufv7YW4LtxypVAQt6IJXMRUW0-vfObSwj5fHyFF-flhA/exec'
       const form = document.forms['submit-to-google-sheet']
     const msg=document.getElementById("msg")
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-              msg.innerHTML=""
-            },5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        toastr.success('Message sent successfully', '', {
+          closeButton: true,
+          progressBar: true,
+          positionClass: 'toast-top-right',
+          timeOut: 10000, // 1 seconds
+          extendedTimeOut: 1000 // 1 second
+        });
+        form.reset();
       })
+      .catch(error => {
+        console.error('Error!', error.message);
+        toastr.error('An error occurred', '', {
+          closeButton: true,
+          progressBar: true,
+          positionClass: 'toast-top-right',
+          timeOut: 3000, // 1 seconds
+          extendedTimeOut: 1000 // 1 second
+        });
+      });
+  });
     </script>
   </body>
 </html>

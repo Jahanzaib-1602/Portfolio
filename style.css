@@ -1,7 +1,82 @@
+.animation {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+}
+  .animation:before,
+  .animation:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+  }
+  .animation:after {
+    color: #FF3D00;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+  }
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
+
+/*  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
   }
   html{
     scroll-behavior: smooth;
@@ -231,9 +306,10 @@
 #portfolio{
   padding:0px 46px;
 }
+
 .work-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap:40px;
   margin-top: 50px;
 }
@@ -243,8 +319,10 @@
   display: block;
   border-radius: 10px;
   transition: transform 0.5s;
+  object-fit:cover;
 }
 .work{
+  flex: 1 1 calc(33.333% - 20px);
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -380,6 +458,10 @@ nav .fas{
   display: none;
 }
 @media only screen and (max-width:600px) {
+  #msg {
+   position: relative;
+    bottom:-23px;
+  }
   .btn-2 {
     display: block;
     margin: 20px auto;
@@ -518,4 +600,33 @@ right: 3%;
       font-size: 14px;
     }
     
+}
+@media (max-width: 1100px) {
+  .work-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* preloader */
+#preloader{
+  background: black url(./loader.gif) no-repeat center;
+  background-size: 15%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100 ;
+}
+/* toast */
+.toast {
+  background-color: black !important;
+  
+}
+.toast-progress {
+  background-color:  #ff004f !important;
 }
