@@ -21,17 +21,17 @@ Shery.mouseFollower({
         link: 'https://github.com/Jahanzaib-1602/Weather_App_1'
       },
       {
-        imgSrc: './images/background.jpg',
-        title: 'Project Title 5',
-        description: 'Description for project 5.',
-        link: 'https://github.com/Jahanzaib-1602/Invoice_Generator'
+        imgSrc: './images/applevision.png',
+        title: 'Apple vision pro',
+        description: 'I am trying to clone the Apple vision website . I am using threejs and gsap in this project . I am currently working on this project and',
+        link: 'https://github.com/Jahanzaib-1602/Apple_vision_pro'
       },
-      {
-        imgSrc: './images/background.jpg',
-        title: 'Project Title 6',
-        description: 'Description for project 6.',
-        link: 'https://github.com/Jahanzaib-1602/Invoice_Generator'
-      }
+      // {
+      //   imgSrc: './images/coding.jpg',
+      //   title: 'Project Title 6',
+      //   description: 'Description for project 6.',
+      //   link: 'https://github.com/Jahanzaib-1602/Invoice_Generator'
+      // }
     ];
 
     const workList = document.getElementById('work-list');
@@ -77,7 +77,7 @@ var loader = document.getElementById('preloader');
 window.addEventListener('load', function() {
   setTimeout(function() {
     loader.style.display = 'none';
-  }, 5000); // 5000 milliseconds = 5 seconds
+  }); 
 });
 
 

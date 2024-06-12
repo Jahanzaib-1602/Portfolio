@@ -560,6 +560,9 @@ right: 3%;
 .copy-right{
   font-size: 14px;
 }
+#preloader{
+  width: 200%;
+}
 
 #msg{
   color: #61b752;
@@ -624,7 +627,7 @@ right: 3%;
 }
 /* toast */
 .toast {
-  background-color: black !important;
+  background-color: transparent !important;
   
 }
 .toast-progress {
